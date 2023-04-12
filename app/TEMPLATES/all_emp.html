@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table" border="1">
+        <thead>
+          <tr>
+            <th scope="col">Sr</th>
+
+            <th scope="col">FName</th>
+            <th scope="col">LName</th>
+            <th scope="col">Dept</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Bonus</th>
+            
+            <th scope="col">Role</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Hire_date</th>
+          
+        </tr>
+        </thead>
+        <tbody>
+            {%for i in emp%}
+
+          <tr>
+            <th scope="row">{{i.id}}</th>
+            <td>{{i.name}}</td>
+            <td>{{i.lname}}</td>
+            <td>{{i.dept}}</td>
+            <td>{{i.salary}}</td>
+            <td>{{i.bonus}}</td>
+            <td>{{i.role}}</td>
+
+            <td>{{i.salary}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.hire_date}}</td>
+
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table></body>
+</html>
