@@ -31,6 +31,8 @@ def addemp(request):
     else:
         pass
 
+def kk(request):
+    pass
 
 def removeemp(request,emp_id=0):
     if emp_id:
